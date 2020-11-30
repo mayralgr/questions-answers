@@ -1,4 +1,4 @@
-# How does timers work with the asynchrony of JavaScript? 
+# How do timers work with the asynchrony of JavaScript? 
 
 There are two types of timers: 
 
