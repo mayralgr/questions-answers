@@ -6,7 +6,7 @@ There are two types of timers:
 
 * SetInterval: allows to run a code in a loop with intervals in between 
 
-JavaScript works in a single threat, so the delays, and timers are not part of JavaScript but part of the window timers in the WEB API. 
+JavaScript works in a single thread, so the delays, and timers are not part of JavaScript but part of the window timers in the WEB API. 
 
 As running in a single threat, there is no concept as delaying, because this will cause the browser to get blocked. 
 
@@ -25,7 +25,7 @@ The event loop works with different parts:
 
 * Queue of callbacks  → where the callbacks from the api’s are added before they pass to the stack 
 
-Eventhough `setTimeOut` and `SetInterval` are used with indication of time 
+Even though `setTimeOut` and `SetInterval` are used with an indicator of time 
 
 ```Javascript
 setTimeout( 
@@ -37,4 +37,4 @@ function callback1() {
 }, 0); 
 ```
 
-This time is `not guaranteed`, this means that if a `setTimeout` or `setInterval` is send with time 0, it is not guaranteed that the code will be executed instantly. This is because it depends on the event loop and the number of tasks in the queue of callbacks that are waiting to pass to the stack of methods, and then, executed by JavaScript. 
+This time is `not guaranteed`, this means that if a `setTimeout` or `setInterval` is sent with time 0, it is not guaranteed that the code will be executed instantly. This is because it depends on the event loop and the number of tasks in the queue of callbacks that are waiting to pass to the stack of methods, and then, executed by JavaScript. 

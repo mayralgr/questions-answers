@@ -2,7 +2,7 @@
 
 The `@Autowired` annotation marks a constructor, setter method, or config method as to be autowired or linked by spring’s dependency injection. 
 
-In a `REST API`, the `@Autowired` annotation allows that once the classes annotate with `@Controller ,@Service ,@repository o @RestController, etc.,` are created in runtime, it makes the links between them. 
+In a `REST API`, the `@Autowired` annotation allows that once the classes annotated with `@Controller ,@Service ,@repository o @RestController, etc.,` are created in runtime, it makes the links between them. 
 
 For example:  
 
@@ -40,4 +40,4 @@ With this, it is avoided to use the
 ```Java
     repository = new ShopRepository()
 ````
-as spring’s finds the dependency, inject it and make an instance. 
+as spring finds the dependency, inject it and make an instance. 
