@@ -37,4 +37,4 @@ function callback1() {
 }, 0); 
 ```
 
-This time is not guaranteed, this means that if a setTimeout or setInterval is send with time 0, it is not guaranteed that that it would immediately run the code. This is because it depends on the event loop and the number of tasks in the queue of callbacks that are waiting to pas to the stack of methods, and then, executed by JavaScript. 
+This time is `not guaranteed`, this means that if a `setTimeout` or `setInterval` is send with time 0, it is not guaranteed that the code will be executed instantly. This is because it depends on the event loop and the number of tasks in the queue of callbacks that are waiting to pass to the stack of methods, and then, executed by JavaScript. 
