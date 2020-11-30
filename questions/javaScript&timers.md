@@ -12,7 +12,7 @@ As running in a single threat, there is no concept as delaying, because this wil
 
 The relationship between the timers and JavaScript is done by the event loop. 
 
- ![Event Loop, https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif ](event_loop.png)
+ ![Event Loop, https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif ](images/event_loop.png)
 
 The event loop works with different parts: 
 
