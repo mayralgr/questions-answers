@@ -49,4 +49,4 @@ Replicas provide redundant copies of your data to protect against hardware failu
 ### What happen when add or substract a replica in number of replicas?
  
  The replicas can be dynamically change, if added, a new replica of the index is created.
- When a replica is substracted it is just elminated without any harm to the primary shards
+ When a replica is substracted it is just deleted without any harm to the primary shards.
