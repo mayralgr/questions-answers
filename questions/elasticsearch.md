@@ -18,7 +18,13 @@ An index refers, in comparison, to a collection in a database.
 ### What is a shard? 
 The shards are pieces of information where Elasticsearch distributes the information. Each document in an index belongs to a primary shard and a replica is a copy of this primary shard.
 
-In summary, the shards are the documents that cointain smaller pieces of information, it cointains a small part of the information of the index so it can be more easy to search through it
+In summary, the shards are the documents that cointain smaller pieces of information. It cointains a small part of the information of the index so it can be more easy to search through it.
+
+### How does Elasticsearch distribute the information between shards/replicas?
+
+Indexes distribute the information in shards, replicas are not used to distribute information. The replicas are just copies of the primary shards.
+
+An index distribute the information in shards, elasticsearch try to balance them. They can be rebalance by modifiying the router but usually elasticsearch try to keep a balance of how many information is in the shards.
 
 ### Replicas
 
@@ -30,12 +36,6 @@ They cointain the same information as the primary shards, but they can not be mo
 
 By indicating the number of replicas in the settings we indicate the times an index will be backed up. By default, the number of replicas is 1. 
 
-
-### How does Elasticsearch distribute the information between shards/replicas?
-
-Indexes distribute the information in shards, replicas are not used to distribute information. The replicas are just copies of the primary shards.
-
-An index distribute the information in shards, elastic search try to balance them. They can be rebalance in the routing
 
 ### Number of replicas 
 The number of replicas can be dynamically updated by updating the settings of an index 
