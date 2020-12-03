@@ -40,9 +40,9 @@ With this, it is avoided to use the
 ```Java
     repository = new ShopRepository()
 ```
-as spring finds the dependency, inject it and make an instance. 
+##### as spring finds the dependency, inject it and make an instance. 
 
-### How 
+### How ?
 
-* Spring do a scan of the classes in the context (the container of the application), helped by the annotations, to create beans (objects that are the backbone of the application) of them
-* Spring do a second scan to inject the dependency, it searches for the bean (by its name) and if it find it, it injects the dependency by calling the constructor. If does not exist, it throws and exception
+* Spring does a scan of the classes in the context (the container of the application), helped by the annotations, to create beans (objects that are the backbone of the application) of them
+* Spring does a second scan to inject the dependency, it searches for the bean (by its name) and if it finds it, it injects the dependency by calling the constructor. If does not exist, it throws an exception

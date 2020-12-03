@@ -24,7 +24,7 @@ In summary, the shards are the documents that cointain smaller pieces of informa
 
 Indexes distribute the information in shards, replicas are not used to distribute information. The replicas are just copies of the primary shards.
 
-An index distribute the information in shards, elasticsearch try to balance them. They can be rebalance by modifiying the router but usually elasticsearch try to keep a balance of how many information is in the shards.
+An index distribute the information in shards, elasticsearch try to balance them. They can be rebalanced by modifiying the router but usually elasticsearch try to keep a balance of how many information is in the shards.
 
 ### Replicas
 
