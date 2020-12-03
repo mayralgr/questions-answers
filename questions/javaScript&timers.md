@@ -6,7 +6,7 @@ There are two types of timers:
 
 * SetInterval: allows to run a code in a loop with intervals in between 
 
-JavaScript works in a single thread, so the delays, and timers are not part of JavaScript but part of the window timers in the WEB API. 
+JavaScript works in a single thread, so the delays, and timers are not part of JavaScript but part of the window timers in the WEB API (the browser). 
 
 As running in a single threat, there is no concept as delaying, because this will cause the browser to get blocked. 
 
@@ -48,7 +48,7 @@ In summary, timers are handled by the WebApi, but the outcomes, the callbacks co
 
 The callback is in the queue of the Javascript event loop, ready to pass to the call stack and be executed, `but how does Javascript knows?`
 
-* The event loop updates its time when the timer first enter and send it to the WebApi
-* Take the timer with the shortest wait time, compare it with its own 
-* If the time has elapsed, it queue it to the queue of callbacks
-* Execute the callback when the call stack is empty.
+* The event loop updates its time when the timer first enters and sends it to the WebApi
+* It takes the timer with the shortest wait time and compares it with its own 
+* If the time has elapsed, it queues it to the queue of callbacks
+* Javascript executes the callback when the call stack is empty
