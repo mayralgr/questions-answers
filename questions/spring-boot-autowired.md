@@ -39,5 +39,10 @@ public class ShopRestService {
 With this, it is avoided to use the 
 ```Java
     repository = new ShopRepository()
-````
+```
 as spring finds the dependency, inject it and make an instance. 
+
+### How 
+
+* Spring do a scan of the classes in the context (the container of the application), helped by the annotations to create beans of them
+* Spring do a second scan to inject the dependency, it searches for the bean (by its name) and if it find it, it injects the dependency by calling the constructor. If does not exist, it throws and exception
