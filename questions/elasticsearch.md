@@ -11,7 +11,7 @@ curl -X PUT "localhost:9200/customer/_settings?pretty" -H 'Content-Type: applica
 
 The `_settings` are the settings of Elasticsearch configuration of an index. In the settings of an index, the number of shards and replicas can be defined.  
 
-### What is an index?
+### What is an index?
 
 An index refers, in comparison, to a collection in a database.
 
