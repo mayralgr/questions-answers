@@ -24,7 +24,7 @@ In summary, the shards are the documents that cointain smaller pieces of informa
 
 Indexes distribute the information in shards, replicas are not used to distribute information. The replicas are just copies of the primary shards.
 
-An index distribute the information in shards, elasticsearch try to balance them. They can be rebalanced by modifiying the router but usually elasticsearch try to keep a balance of how many information is in the shards.
+An index distributes the information in shards, elasticsearch tries to balance them. They can be rebalanced by modifiying the router but usually elasticsearch tries to keep a balance of how many information is in the shards.
 
 ### Replicas
 
@@ -49,5 +49,5 @@ Replicas provide redundant copies of your data to protect against hardware failu
 
 ### What happen when add or substract a replica in number of replicas?
  
- The replicas can be dynamically change, if added, a new replica of the index is created.
- When a replica is substracted it is just deleted without any harm to the primary shards.
+ The replicas can be dynamically changed. If added, a new replica of the index is created.
+ When a replica is substracted, it is just deleted without any harm to the primary shard.
