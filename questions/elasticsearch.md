@@ -47,7 +47,7 @@ A document is routed to a particular shard in an index using the formula:
 `
 shard_num = hash(_routing) % num_primary_shards
 `
-with this formula elastic search decides in which shared the document will be stored. 
+with this formula elastic search decides in which shard the document will be stored. 
 
 ** _routing is a metadata field in each document, by default it is the ID of the document
 
